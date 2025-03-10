@@ -28,7 +28,6 @@ These are Rails coding guidelines.
 - Use `PascalCase` for classes and components.
 - Use `UPPER_CASE` for constants.
 
-
 ## Comments
 
 Don't write comments that explain how code works. Write comments for documentation purposes, use RD (RDoc) for Ruby and JSDoc for JavaScript.
@@ -61,6 +60,13 @@ Don't write comments that explain how code works. Write comments for documentati
 - Use `if` and `else` for control flow.
 - Use arrow functions `=>` for anonymous functions.
 - Use `{} for single-line blocks.
+
+## Architecture
+
+- Use MVC architecture.
+- Keep controllers thin.
+- Keep models simple.
+- Use services for business logic.
 
 ## Testing
 
