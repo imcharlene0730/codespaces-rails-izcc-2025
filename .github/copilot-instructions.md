@@ -71,4 +71,5 @@ Don't write comments that explain how code works. Write comments for documentati
 ## Commits
 
 - Use conventional commits.
-- Use `git diff` and `git status` to check what you are committing.
+- Use `git --no-pager diff` and `git --no-pager status` to check what you are committing.
+- Write a clear commit message in English.
