@@ -4,6 +4,14 @@
 
 These are Rails coding guidelines.
 
+## Technologies
+
+* Ruby on Rails 7.1
+* Ruby 3.3
+* Stimulus.js
+* ActiveStorage
+* SQLite3
+
 ## Indentation
 
 - We use 2 spaces for indentation in Ruby. 
