@@ -75,6 +75,8 @@ Don't write comments that explain how code works. Write comments for documentati
 - Keep controllers thin.
 - Keep models simple.
 - Use services for business logic.
+- Put CSS in `app/assets/stylesheets`.
+- Put JavaScript in `app/javascript`.
 
 ## Testing
 
