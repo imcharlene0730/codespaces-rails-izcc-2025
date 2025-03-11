@@ -12,6 +12,8 @@ These are Rails coding guidelines.
 * ActiveStorage
 * SQLite3
 
+Don't install any other gems or libraries without permission.
+
 ## Indentation
 
 - We use 2 spaces for indentation in Ruby. 
