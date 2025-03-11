@@ -69,24 +69,37 @@ Don't write comments that explain how code works. Write comments for documentati
 - Use arrow functions `=>` for anonymous functions.
 - Use `{} for single-line blocks.
 
+### CSS
+
+- Use [BEM](http://getbem.com/) for [naming classes](https://getbem.com/naming/).
+- Use `rem` for font sizes.
+- Write modular CSS instead of page-specific CSS.
+
 ## Architecture
 
-- Use MVC architecture.
 - Keep controllers thin.
 - Keep models simple.
-- Use services for business logic.
+- Extract complex logic into service objects in the `app/services` directory.
 - Put CSS in `app/assets/stylesheets`.
 - Put JavaScript in `app/javascript`.
+
+### Modularity
+
+- Use partials for reusable views.
+- Use helpers for reusable logic.
+- Use concerns for reusable model logic.
+- Use Stimulus controllers for reusable JavaScript logic.
+- Use components for reusable UI elements.
 
 ## Testing
 
 - Write tests for all usecases.
-- Use `MiniTest` to write integration tests and unit tests.
+- Use `minitest` to write feature tests (first) and unit tests (last).
 - Run tests after every change.
+- Create mock images use [Lorem Picum](https://picsum.photos/).
 
 ## Commits
 
-- Use conventional commits.
-- Always use English to write commit messages.
+- Use conventional commits with English descriptions.
 - Use `git --no-pager diff` and `git --no-pager status` to check what you are committing.
 - Ensure all files are added to the commit before committing.
