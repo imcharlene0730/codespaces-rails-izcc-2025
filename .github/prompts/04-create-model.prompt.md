@@ -6,6 +6,18 @@ Do it step by step to create a model in Rails application.
 
 Before creating a model, confirm with the team by explain the scheam of the model. And make sure that the schema is correct and complete.
 
+Example schema in markdown format:
+
+```markdown
+| Column Name | Data Type | Description |
+|-------------|-----------|-------------|
+| id          | integer   | Primary key |
+| name        | string    | Name of the model |
+| age         | integer   | Age of the model |
+| created_at  | datetime  | Created timestamp |
+| updated_at  | datetime  | Updated timestamp |
+```
+
 ## 2. Run Rails generator to create a model
 
 To create a model, run the following command:
@@ -14,6 +26,11 @@ rails generate model <model_name> <column_name>:<data_type> <column_name>:<data_
 ```
 
 Replace `<model_name>` with the name of the model you want to create and `<column_name>` with the name of the column and `<data_type>` with the data type of the column.
+
+Example:
+```bash
+rails generate model User name:string age:integer
+```
 
 ## 3. Check migration file
 
