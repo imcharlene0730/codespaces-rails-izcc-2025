@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>翻譯結果</title>
+  <% if @english_word.present? %>
+    <meta http-equiv="refresh" content="0; url=<%= @bing_translate_url %>">
+  <% end %>
+</head>
+<body>
+  <div class="translation-result">
+    <h1>翻譯系統</h1>
+    <% if @english_word.present? %>
+      <p>正在重導向到 Bing 翻譯...</p>
+      <p>如果沒有自動重導向，請<a href="<%= @bing_translate_url %>">點擊這裡</a></p>
+    <% else %>
+      <p>請輸入英文單字進行翻譯。</p>
+    <% end %>
+  </div>
+</body>
+</html>

@@ -7,5 +7,14 @@
     <p class="small">
       Edit <code>app/views/hello/index.html.erb</code> and see changes live!
     </p>
+    <%= form_with url: '/translate', method: :get, local: true do %>
+      <div>
+        <label for="word">輸入英文單字:</label>
+        <input type="text" name="word" id="word" />
+      </div>
+      <div>
+        <button type="submit">翻譯</button>
+      </div>
+    <% end %>
   </header>
 </div>
